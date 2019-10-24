@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/logo_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dip"       >
+
+    <TextView android:id="@+id/id2_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:textSize="18sp"
+        android:gravity="left|center_vertical"
+        android:text="电表ID："      />
+    <TextView android:id="@+id/tv_info_id"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_toRightOf="@id/id2_text_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/id2_text_id"
+        android:textSize="18sp"
+        android:gravity="left|center_vertical"/>
+    <TextView android:id="@+id/name2_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_below="@id/id2_text_id"
+        android:layout_alignLeft="@id/id2_text_id"
+        android:textSize="18sp"
+        android:gravity="left|center_vertical"
+        android:text="部门/工序："      />
+    <TextView android:id="@+id/tv_info_name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_toRightOf="@id/name2_text_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/name2_text_id"
+        android:textSize="18sp"
+        android:gravity="left|center_vertical"      />
+
+    <TextView
+        android:id="@+id/age2_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@id/name2_text_id"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="left|center_vertical"
+        android:text="位置："
+        android:textSize="18sp" />
+    <TextView android:id="@+id/tv_info_age"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_toRightOf="@id/age2_text_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/age2_text_id"
+        android:textSize="18sp"
+        android:gravity="left|center_vertical"      />
+
+    <TextView
+        android:id="@+id/sex2_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@id/age2_text_id"
+        android:layout_alignLeft="@id/age2_text_id"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="left|center_vertical"
+        android:text="备注信息："
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_info_sex"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_toRightOf="@id/sex2_text_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/sex2_text_id"
+        android:textSize="18sp"
+        android:gravity="left|center_vertical"         />
+
+    <TextView
+        android:id="@+id/like2_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@id/sex2_text_id"
+        android:layout_alignLeft="@id/sex2_text_id"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="left|center_vertical"
+        android:text="日期："
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_info_likes"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_toRightOf="@id/like2_text_id"
+        android:layout_below="@id/sex2_text_id"
+        android:layout_marginRight="5dip"
+        android:textSize="18sp"
+        android:gravity="left|center_vertical"/>
+
+    <TextView
+        android:id="@+id/contact2_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@id/like2_text_id"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="center_vertical|left"
+        android:text="上次使用："
+        android:textSize="18sp" />
+    <TextView android:id="@+id/tv_info_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_toRightOf="@id/contact2_text_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/contact2_text_id"
+        android:textSize="18sp"
+        android:gravity="center_vertical|left"     />
+
+    <TextView
+        android:id="@+id/train2_time_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@id/contact2_text_id"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="center_vertical|left"
+        android:text="当前日期："
+        android:textSize="18sp" />
+    <TextView android:id="@+id/tv_info_train_date"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_toRightOf="@id/train2_time_text_id"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/train2_time_text_id"
+        android:textSize="18sp"
+        android:gravity="center_vertical|left"     />
+
+    <TextView
+        android:id="@+id/train2_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@id/train2_time_text_id"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="center_vertical|left"
+        android:text="本次计数："
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/record_info"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/tv_info_train_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/train2_reading"
+        android:background="#79ffffff"
+        android:hint="请输入用电量"
+        android:inputType="textPersonName"
+        android:paddingLeft="18sp" ></EditText>
+
+    <Button android:id="@+id/back_to_list_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="保存数据"
+        android:layout_below="@id/train2_reading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="goBack">
+    </Button>
+</RelativeLayout>
